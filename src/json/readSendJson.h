@@ -19,11 +19,6 @@ void publishTopics() {
   light = readLightSensor();
   soil = readSoilSensor();
 
-  // Serial.println(String(tempHum[0]).c_str());
-  // Serial.println(String(tempHum[1]).c_str());
-  // Serial.println(String(light).c_str());
-  // Serial.println(String(soil).c_str());
-
   doc_dht["sensor"] = "DHT11";
   doc_dht["typeSensor"] = "TempHum";
   JsonArray readings = doc_dht.createNestedArray("data");

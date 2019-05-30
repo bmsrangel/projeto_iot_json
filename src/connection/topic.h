@@ -2,10 +2,6 @@
 #include "../config/gpio.h"
 
 #define TOPICO_BOMBA "/projetoIoT"
-#define TOPICO_TEMP "/projetoIoT/dht/temp"
-#define TOPICO_HUM_DHT11 "/projetoIoT/dht/hum"
-#define TOPICO_HUM_SOLO "/projetoIoT/soil"
-#define TOPICO_LIGHT "/projetoIoT/light"
 #define TOPICO_SENSORS "/projetoIoT/sensors"
 
 int statusBomba = HIGH;
@@ -29,14 +25,6 @@ void tratarTopico(char *topic, String msg) {
       statusBomba = HIGH;
     }
   }
-
-  // Serial.println();
-  // Serial.print("Status da bomba: ");
-  // if (statusBomba == HIGH) {
-  //   Serial.println("Desligada");
-  // } else {
-  //   Serial.println("Ligada");
-  // }
 
   digitalWrite(BOMBA, statusBomba);
 }

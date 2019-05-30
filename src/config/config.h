@@ -1,5 +1,5 @@
-#define WIFI_SSID "BrunoR"
-#define WIFI_PASS "ebds251091"
+#define WIFI_SSID "<SSID da rede wifi>"
+#define WIFI_PASS "<Senha da rede wifi>"
 
 #define MQTT_SERVER "iotsaeg.nc2.iff.edu.br"
 #define MQTT_USER "saeg"
